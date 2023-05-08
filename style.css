@@ -1,0 +1,342 @@
+
+/*------------------------------ GLOBAL STYLES ----------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --bg-color: #d8d6d6;
+    --form-color: #006400;
+    --text-color: #ffffff;
+    --font-family: 'Barlow', sans-serif;
+    --error-color: red;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border-radius: 50%;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+
+
+/*------------------------- SIMILAR STYLES ------------------------------------------- */
+
+img, body, input:hover, input:focus, #submit-btn:hover, #submit-btn:focus, #ok-btn:hover, #ok-btn:focus{
+    background-color: var(--bg-color);
+}
+
+input:hover, input:focus, select:hover, select:focus, #submit-btn:hover, #submit-btn:focus, #ok-btn:hover, #ok-btn:focus{
+    cursor: pointer;
+}
+
+.container, label, .gender{
+    display: flex;
+}
+
+h1, label{
+    color: var(--text-color);
+}
+
+#p-label, #lang-label{
+    gap: 1.3rem;
+}
+
+#n-label, #c-label{
+    gap: 3rem;
+}
+
+#e-label, #a-label{
+    gap: 3.2rem;
+}
+
+input, select, #submit-btn{
+    border-radius: 0.2rem;
+}
+
+input, select{
+    outline: none;
+}
+
+input, #submit-btn, #success-img, #ok-btn{
+    border: 0rem solid;
+}
+
+#submit-btn:hover, #submit-btn:focus, #ok-btn:hover, #ok-btn:focus{
+    transform: translateY(-5px);
+    transition: 360ms ease-out;
+}
+
+#submit-btn, a{
+    font-weight: bolder;
+    color: var(--form-color);
+    font-size: 1rem;
+}
+
+
+
+/*--------------------------- OTHER STYLES -------------------------------------------- */
+
+/* styling the container */
+.container{
+    width: 50%;
+    margin: 6rem auto;
+    background-color: var(--form-color);
+    border-radius: 0.5rem;
+    padding: 2em 0em;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
+
+#my-logo{
+    width: 20%;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+#error-message{
+    color: var(--error-color);
+    font-weight: bold;
+    align-self: start;
+    font-size: 1.1rem;
+    margin: 0rem 0rem 2rem 2em;
+    padding: 0rem 2rem 0rem 1rem;
+}
+
+
+/* styling the form */
+input{
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+}
+
+#p-no-label{
+    gap: 1rem;
+}
+
+select{
+    border: 0rem solid;
+    padding: 0.3rem 0.6rem;
+}
+
+.gender{
+    gap: 2.35rem;
+}
+
+#male-label{
+    margin-left: 0.3rem;
+}
+
+.btns{
+    margin-left: 0.3rem;
+}
+
+#about{
+    padding-bottom: 4rem;
+}
+
+#submit-btn{
+    background-color: var(--text-color);
+    padding: 1rem 10rem;
+}
+
+
+/* styling the pop-up section */
+.pop{
+    max-width: 30%;
+    background-color: var(--form-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    margin: 8rem auto;
+    text-align: center;
+}
+
+a{
+    color: var(--form-color);
+    text-decoration: none;
+}
+
+#success-img{
+    width: 25%;
+}
+
+#ok-btn{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+h2{
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* ------------------------------- MEDIA QUERIES ------------------------------------------------ */
+
+@media(max-width: 37.5em){
+
+    /*--------------------------- OTHER STYLES -------------------------------------------- */
+
+    /* styling the container */
+    .container{
+        width: 120%;
+        padding: 2em;
+    }
+
+    #my-logo{
+        width: 40%;
+    }
+
+    /* styling the form */  
+    #form{
+        width: 100%;
+    }
+
+    input{
+        width: 70%;
+    }
+
+    .gender{
+        gap: 1.5rem;
+    }
+
+    #male-label{
+        margin-left: 0.65rem;
+    }
+
+    .btns{
+        margin-left: 0.07rem;
+    }
+
+    /* styling the pop-up section */
+    .pop{
+        max-width: 80%;
+    }
+
+}
+
+@media(max-width: 22em){
+
+    /*------------------------- SIMILAR STYLE ------------------------------------------- */
+
+     /* styling the form */  
+     #phone-no, #zip-code{
+        width: 100%;
+    }
+
+    /*--------------------------- OTHER STYLE -------------------------------------------- */
+
+    /* styling the form */  
+    #submit-btn{
+        padding: 1rem 8rem;
+    }
+}
+
+
+
+@media(min-width: 24em) and (max-width: 37.5em){
+
+     /*--------------------------- OTHER STYLE -------------------------------------------- */
+
+    /* styling the form */
+    #phone-no{
+        margin-right: 1.7rem;
+    }
+}
+
+
+
+@media(min-width: 22em) and (max-width: 24em){
+
+    /*--------------------------- OTHER STYLES -------------------------------------------- */
+
+    /* styling the form */
+    #phone-no{
+        margin-right: 1.2rem;
+    }
+
+    #submit-btn{
+        padding: 1rem 9.5rem;
+    }  
+}
+
+
+
+@media(min-width: 22em) and (max-width: 37.5em){
+
+    /*--------------------------- OTHER STYLES -------------------------------------------- */
+
+    /* styling the form */
+    #c-label{
+        gap: 1.7rem;
+    }  
+
+    #p-no-label{
+        gap: 0rem;
+    }
+
+    #phone-no{
+        width: 80%;
+        align-self: center;
+    }
+
+    #submit-btn{
+        margin-right: 3rem;
+    }  
+
+}
+
+
+
+@media(min-width: 48em) and (max-width: 62.5em){
+
+    /*--------------------------- OTHER STYLES -------------------------------------------- */
+
+    /* styling the form */  
+    #form{
+        width: 85%;
+    }
+
+    .gender{
+        gap: 1rem;
+    }
+
+    #male-label{
+        margin-left: 1.45rem;
+    }
+
+    #submit-btn{
+        padding: 1rem 8.3rem;
+    }
+
+    /* styling the pop-up section */
+    .pop{
+        max-width: 40%;
+        margin: 10rem auto;
+    }
+}
+
+
+
+@media(min-width: 53em) and (max-width: 62.5em){
+
+    /*--------------------------- OTHER STYLE -------------------------------------------- */
+
+    /* styling the form */  
+    #submit-btn{
+        padding: 1rem 10.2rem;
+    }
+}

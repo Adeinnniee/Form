@@ -1,0 +1,106 @@
+
+/*------------------------------ GLOBAL STYLES ----------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --font-family: 'Barlow', sans-serif;
+    --bg-color: #d8d6d6;
+    --white-color: #ffffff;
+    --border-color: #006400;
+    --black-color: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+
+
+/*------------------------- SIMILAR STYLES ------------------------------------------- */
+input, input::placeholder, #search-btn{
+    color: var(--white-color);
+}
+
+table, h1{
+    text-align: center;
+}
+
+input:hover, input:focus, #search-btn:hover, #search-btn:focus{
+    cursor: pointer;
+    outline: none;
+}
+
+input, #search-btn{
+    border: 0rem solid;
+}
+
+#search-btn:hover, #search-btn:focus{
+    transform: translateY(-2px);
+    transition: 360ms ease-out;
+}
+
+
+
+/*--------------------------- OTHER STYLES -------------------------------------------- */
+
+/* styling the search bar form */
+form{
+    margin-top: 3rem;
+}
+
+label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+}
+
+#search-btn{
+    margin: 0.4rem 4rem 0rem 0rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--black-color);
+}
+
+input{
+    padding: 1rem 3rem 1rem 0.5rem;
+    margin:1.5rem 4rem 0rem 0rem;
+    border-radius: 0.5rem;
+    background-color: var(--border-color);
+}
+
+
+/* styling the table */
+table{
+    border-collapse: collapse;
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+    border: 0.2rem solid var(--border-color);
+    background-color: var(--white-color);
+}
+
+h1{
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+th, td{
+    border: 0.15rem solid var(--border-color);
+    padding: 0.5rem;
+}
+
+p{
+    margin-top: 1rem;
+}
